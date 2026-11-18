@@ -1,7 +1,7 @@
 import 'util/input_stream.dart';
 import 'zlib/zlib_decoder_stub.dart'
     if (dart.library.io) 'zlib/_zlib_decoder_io.dart'
-    if (dart.library.js) 'zlib/_zlib_decoder_js.dart';
+    if (dart.library.js_interop) 'zlib/_zlib_decoder_js.dart';
 
 /// Decompress data with the zlib format decoder.
 class ZLibDecoder {
